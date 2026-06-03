@@ -1,0 +1,22 @@
+# Robot Framework results
+fnb/results/
+fnb/output.xml
+fnb/log.html
+fnb/report.html
+fnb/tests/output.xml
+fnb/tests/log.html
+fnb/tests/report.html
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.cpython-*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

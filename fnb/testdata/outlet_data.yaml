@@ -1,0 +1,53 @@
+# =============================================================================
+# outlet_data.yaml  —  All test data for TC_FNB_001 Add Outlet (Food) suite.
+# Nothing is hardcoded in .robot or .py files — everything lives here.
+# Requires PyYAML: pip install pyyaml
+# =============================================================================
+
+# ── Step 1: OTP Login ─────────────────────────────────────────────────────────
+
+LOGIN_URL: "https://staging.dashboard.aeria.world/auth?step=enter-email&callbackUrl=%2Ftenant%2Fvms%2F%3Ftab%3Dpending-requests"
+LOGIN_EMAIL: "ak@aeria.world"
+
+# smtp4dev instance that delivers OTP emails
+SMTP4DEV_URL: "http://13.202.22.2"
+SMTP4DEV_USERNAME: "devteam"
+SMTP4DEV_PASSWORD: "Aeria@G9#"
+# The To: address the OTP email is sent to (same as LOGIN_EMAIL for this account).
+SMTP4DEV_EMAIL: "ak@aeria.world"
+
+# Tenant to select on the account-picker screen after OTP verification
+TENANT_NAME: "Gravity By Prestige"
+
+
+# ── Step 3: Overview (Wizard Step 1) ─────────────────────────────────────────
+
+# A timestamp suffix is appended at runtime so names stay unique across runs
+OUTLET_NAME_PREFIX: "Test Auto Outlet"
+
+# Location tree: first click the tower, then the floor
+OUTLET_LOCATION_TOWER: "Gravity"
+OUTLET_LOCATION_FLOOR: "Ground Floor"
+
+OUTLET_FSSAI:  "34567654323456"
+OUTLET_PHONE:  "9999999999"
+OUTLET_EMAIL:  "testoutlet@aeria.world"
+
+
+# ── Step 4: Configuration (Wizard Step 2) ────────────────────────────────────
+
+OUTLET_CUISINES:
+  - Indian
+  - Italian
+  - Chinese
+  - Mexican
+
+OUTLET_COST_FOR_TWO: "200"
+OUTLET_PAYMENT_COLLECTOR: ""
+OUTLET_DEFAULT_GST_RATE: "0%"
+
+
+# ── Step 6: Switch to Site Admin ─────────────────────────────────────────────
+
+# Exact account label shown in the Switch Accounts dialog
+SITE_ADMIN_NAME: "Site Admin @ Prestige Tech Park"
