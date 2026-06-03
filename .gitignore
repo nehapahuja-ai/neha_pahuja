@@ -1,4 +1,4 @@
-# Robot Framework results
+# Robot Framework results and artifacts
 fnb/results/
 fnb/output.xml
 fnb/log.html
@@ -6,6 +6,7 @@ fnb/report.html
 fnb/tests/output.xml
 fnb/tests/log.html
 fnb/tests/report.html
+fnb/tests/selenium-screenshot-*.png
 
 # Python cache
 __pycache__/
